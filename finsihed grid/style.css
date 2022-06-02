@@ -1,0 +1,108 @@
+
+
+
+
+nav {
+    background-color:tan;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+nav a {
+    text-decoration: none;
+    padding: 40px;
+    color:blanchedalmond;
+    font-size: 20px;
+    font-family: century gothic;
+    text-align: center;
+}
+
+
+nav a:hover{
+    color:rgb(28, 78, 38);
+    text-align: center;
+}
+
+
+header {
+    background-image: url(./images/brownclothes.png);
+    background-size: auto;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+}
+
+
+header h1 {
+    padding: 100px;
+    text-align: center;
+  
+    
+    
+}
+
+
+h1 {
+    color:tan;
+    font-family:KIONA BOLD;
+    font-size: 100px;
+    background-clip:content-box; 
+    background-color: aliceblue;
+    
+}
+
+
+.item1 { grid-area: image1;}
+.item2 { grid-area: image2; }
+.item3 { grid-area: image3; }
+.item4 { grid-area: image4; }
+.item5 { grid-area: box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+    padding-top: 2%;
+ 
+ 
+  
+}
+
+.grid-container > div {
+    padding-bottom: 2%;
+    font-size: 30px;
+    padding-left: 2%;
+
+   
+    
+  
+  
+    
+    
+  }
+
+  
+  
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
