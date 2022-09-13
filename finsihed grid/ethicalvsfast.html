@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Document</title>
+    </head>
+<!--this connects my html to my css-->
+
+    <body>
+      <header>
+        <div class="backgroundbox2"><h1>Ethical vs Fast Fashion</h1></div>
+      </header>
+<!--this is the title for my header-->        
+      <nav>
+        <a href="home.html" target="_blank" >Home</a>
+            <a href="whatisit.html" target="_blank">What is fast Fashion?</a>
+            <a href="positiveimpacts.html" target="_blank">How to make a positive impact</a>
+            <a href="ethicalvsfast.html"target="_blank">Ethical fashion vs fast fashion</a>
+      </nav>
+
+      <div class="mycols">
+        <section class="col-one">
+          <div class="slideshow-container">
+            <div class="mySlides fade">     
+              <img src="images/zara" alt=" zara top" style="max-width:100%">   
+            </div>
+            <div class="mySlides fade">
+              <img src="images/twogirls" alt="two girls" style="max-width:100%">        
+            </div>           
+            <div class="mySlides fade">             
+              <img src="images/pinkandblue" alt="pink and blue jackets" style="max-width:100%">                
+            </div>                            
+            <div class="mySlides fade">             
+              <img src="images/h&m" alt="h&m bag" style="max-width:100%">                 
+            </div>
+            <div class="mySlides fade">               
+              <img src="images/brownlookingc" alt="brown clothes"style="max-width:100%">
+            </div>
+  
+          </div>
+              
+              
+            <div style="text-align: center;">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+              
+            <script>
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1} 
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none"; 
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block"; 
+                dots[slideIndex-1].className += " active";
+              }
+            </script>
+          </section>
+  
+          <section class="col-two">
+            <div class="backgroundbox4"><h5> Telling the difference</h5></div>
+              <div><p class="what">H&M, Zara, Rip Curl, Shien, Urban Outfitters, Gap, farmers, pretty little thing. These are all well known and popular for their cheap and trendy clothes. However these clothes are all contributing to fast fashion. Sometimes it can be difficult to tell the difference between fast fashion and ethical fashion. One way to tell the difference is to look at how much waste each one produces. If your clothes are often falling apart and breaking causing you to dispose of them they are obviously producing waste. If this is happening the brand is obivously bad quality and you should stop buying from them. Another thing to look at is how much the brand pays their workers and the conditions these workers work in. </p>
+              <div><p class="what">Every year a company called <a class="link" href="https://www.tearfund.org.nz/search?searchtext=ethical+fashion+report&searchmode=anyword">tearfund</a> releases an ethical fashion report. In the report they grade brands based on how ethical they are. The brands mentioned are all graded with an F. This tells us that they do not meet different ethical fashion standards. I recommend having a look at the tearfund ethical fashion report to become more informed about the behind the scenes of the brands you buy from. Understanding the differences between ethical fashion and fast fashion will help to make a difference.</p>
+              </div>
+          </section>
+          </div>
+     
+
+    </body>
+      <footer><h3>CONTACTS</h3>
+        <a class="phone" href="72793@diocesan.school.nz" target="_blank">EMAIL: 72793@diocesan.school.nz</a>
+        <div><p class="phone">PHONE: 021354212</p></div>
+        <div><p class="phone">INSTAGRAM: @fastfashioninsta</p></div>
+        <div><p class="phone">FACEBOOK: @fastfashionfacebook</p></div>
+      </footer>
+</html>
+      
+
+                  
+            
