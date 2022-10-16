@@ -41,14 +41,12 @@ h1 {
 }
 /* header above (controls all headers across pages*/
 
-.backgroundbox5{   
-    background-clip:content-box; 
-    background-color:tan;
-    text-align: center;
-    width: 100% ;
-    left: 100%;
-    margin-top: 0%;
-    margin-right: 0%;
+b {
+    font-size: 17px;
+    font-family: century gothic bold;
+    color: rgb(28, 78, 38);
+    padding: 0%;
+    margin-top: 2%;
 }
 
 .backgroundbox{
@@ -60,7 +58,7 @@ h1 {
     margin-right: 10%;
     margin-top: 12%;
 }
-/* background box around header above */
+/* background box above controls all headers across pages */
 
 
 .item1 { grid-area: image1;
@@ -161,6 +159,7 @@ background-color:rgba(210, 180, 140, 0.349);}
 
 
 .grid-container1 {
+    grid-template-columns: 31.3%, 31.3%, 31.3%;
     display: grid;
     padding-top: 2%; 
     column-gap: 2%; 
@@ -179,18 +178,18 @@ background-color:rgba(210, 180, 140, 0.349);}
     width: 100% ;
     left: 100%;
 }
-        
+/* above controls the background box of the subheadings for pages what is it and positive impacts*/
 
-.backgroundbox2{
-    background-clip:content-box; 
-    background-color: aliceblue;
-    max-width: 100%;
+       
+h5 {
+    color:blanchedalmond;
+    font-family: century gothic;
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 12%;
+    font-size: 25px;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
-
+/* above controls the text for the subheadings on every page*/
 .what {
     font-size: 17px;
     font-family: century gothic;
@@ -225,24 +224,8 @@ background-color:rgba(210, 180, 140, 0.349);}
     margin-top: 0%;
 } 
     
-        
-.backgroundbox3{   
-    background-clip:content-box; 
-    background-color:tan;
-    text-align: center;
-    width: 100% ;
-    left: 100%;
-}
 
-       
-h5 {
-    color:blanchedalmond;
-    font-family: century gothic;
-    text-align: center;
-    font-size: 25px;
-    margin-top: 0%;
-    margin-bottom: 0%;
-}
+
 
 .grid-container2 {
     display: grid;
